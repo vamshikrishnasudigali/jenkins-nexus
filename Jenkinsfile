@@ -39,10 +39,10 @@ pipeline {
                             nexusVersion: 'nexus3',
                             protocol: 'http',
                             nexusUrl: '172.31.23.159:8081/',
-                            groupId: pom.com.mycompany.app,
-                            version: pom.1.0-SNAPSHOT  ,
+                            groupId: 'pom.com.mycompany.app',
+                            version: 'pom.1.0-SNAPSHOT',
                             repository: 'my-maven',
-                            credentialsId: ' NEXUS_CRED',
+                            credentialsId: 'NEXUS_CRED',
                             artifacts: [
                                 [artifactId: 'pom.my-app',
                                 classifier: '',
